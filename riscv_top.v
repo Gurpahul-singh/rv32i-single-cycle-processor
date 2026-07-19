@@ -99,10 +99,9 @@ module riscv_top (
         .clk(clk),
         .MemoryRead(MemoryRead),
         .MemoryWrite(MemoryWrite),
-
+        .funct3(funct3),
         .address(alu_result),
         .write_data(rs2_data),
-
         .read_data(read_data)
     );
 
